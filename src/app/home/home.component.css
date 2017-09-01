@@ -1,0 +1,107 @@
+ h1{ 
+    color:white;
+}   
+
+h2{                                                /* Design for " Why Choose Us" */
+    text-align:center;
+    color: black;    
+}
+
+h4{                                                
+    text-align:center;
+}
+h6{
+    color:white;
+    background-color: black;
+} 
+p{
+    word-spacing: 150px;
+    font-size:220%;
+}
+
+
+.page{ 
+    background-image:url("gob.jpg");              /* Specifies background image for the main page*/
+    min-height: 512px;
+    min-width: 100%;
+    background-repeat:repeat;
+    
+} 
+
+
+ li{
+    list-style-type: none;                         /* Aligning navigation bar*/
+    margin:12px 12px;
+} 
+
+a{                                               /*color for elements in nav-bar */
+    color:white;
+}         
+ /*
+ul {                                            /*Remove default bullets,margin and padding from the list items
+    list-style-type: none;
+}  
+ */
+
+#carouselExampleControls {
+    margin:10px 10px;
+    float: none;
+     position: relative; 
+   /* top: 50%;  pushes the icon in the middle of the height */
+    z-index: 5;
+    display: inline-block;
+    min-height: 500px;
+    min-width:1200px;
+    }
+#carouselExampleSlidesOnly{
+    float: left;
+    margin: 100px 100px;
+    width: 80%;
+}
+
+.plan{
+    background-color:black;
+    text-align:center;
+    line-height: 100px;
+}
+.client{
+    background-color:grey;
+}
+
+footer {                                        /*Design for all footer elements*/
+    display: table;
+    background-image:url("footer.jpg");
+    min-height: 350px;
+    min-width: 100%;
+    background-repeat:repeat;
+    color:#E7E0E0;
+    color: white;
+}
+
+
+footer > section {text-align: left;
+
+    display: table-cell;
+    padding: 2em;
+}
+
+footer > section + section {
+    border-left: 1px none;
+}
+
+/* .bottom{
+    background-color: black;
+    color:white;
+} */
+
+.bottom {background-color:gray; line-height: 30px;
+    
+}
+.footer-bottom1{            /*Design for bottom-most elements in footer (Privay Policy and Copyright)*/
+    float:left;
+    
+}
+.footer-bottom2{
+    float:right;
+    
+} 
