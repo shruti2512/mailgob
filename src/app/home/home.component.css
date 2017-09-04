@@ -12,53 +12,110 @@ h4{
 }
 h6{
     color:white;
-    background-color: black;
+    /* background-color: black; */
 } 
 p{
     word-spacing: 150px;
     font-size:220%;
 }
 
-
 .page{ 
-    background-image:url("gob.jpg");              /* Specifies background image for the main page*/
-    min-height: 512px;
+    background-image:url("gob.png");              /* Specifies background image for the main page*/
+    position: relative;
+    min-height: 672px;
     min-width: 100%;
     background-repeat:repeat;
-    
+        
 } 
+.navbar-default{
+    background-color: none;
+}
+.navbar-inner {
+    background: none !important; 
+    text-decoration: none;
+    border-radius: 0;
+    border: 0 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+  }
+  
+  .navbar-inverse .nav .active > a {
+    background: 0 !important; 
+    border-radius: 0;
+    color: white !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+  }
 
+  .navbar-inverse .nav > li > a {
+    color: blue !important;
+    text-shadow: none !important;
+  }
+  
+  .navbar-inverse .nav > li > a:hover {
+    color: blue !important;
+  }
+
+.underline{
+    text-align: center;
+    color:red;
+    font-weight:bolder;
+}
 
  li{
     list-style-type: none;                         /* Aligning navigation bar*/
-    margin:12px 12px;
-} 
+    }  
 
 a{                                               /*color for elements in nav-bar */
+
     color:white;
 }         
- /*
-ul {                                            /*Remove default bullets,margin and padding from the list items
+ 
+ul {                                            /*Remove default bullets,margin and padding from the list items*/
     list-style-type: none;
 }  
- */
+ 
 
-#carouselExampleControls {
-    margin:10px 10px;
-    float: none;
-     position: relative; 
-   /* top: 50%;  pushes the icon in the middle of the height */
-    z-index: 5;
-    display: inline-block;
-    min-height: 500px;
-    min-width:1200px;
-    }
-#carouselExampleSlidesOnly{
+ #carouselExampleSlidesOnly{
     float: left;
-    margin: 100px 100px;
+    margin: 180px 180px;
     width: 80%;
 }
 
+#carouselExampleControls img{
+    margin:10px 10px 10px 10px;
+    position: relative; 
+   /* top:50%;
+     display: inline-block; 
+    width: 100%;*/
+    height: 425px;
+    max-height: 625px;
+    /*overflow:hidden;*/
+    }
+    .glyphicon-menu-left {
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        
+     }
+     .glyphicon-menu-right{
+       position:absolute;
+        top: 50%;
+        right: 40px;
+        
+     }
+
+    .glyphicon
+    {
+        font-size: 40px;
+        color:black;
+    }
+
+    .glyphicon:hover
+    {
+        color:orangered;
+    }
+    
 .plan{
     background-color:black;
     text-align:center;

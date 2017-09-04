@@ -1,5 +1,6 @@
 <html>
-  <head>
+<head>
+
     <script>   
         $(function()
         {
@@ -17,50 +18,57 @@
 
 
         </script>
+         <title>Bootstrap Example</title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
        <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
         crossorigin="anonymous"> -->
-      </head>
-   <body>
+</head>
+<body>
    
-<div class="page">
-  <h1>{{sitename}}</h1>                                               <!-- Specifies MailGob logo-->
+  <div class="page">
+    <!-- <h1>{{sitename}}</h1>   -->                                             <!-- Specifies MailGob logo-->
+    <img [src]="mailgob_logo" alt="mailgob"height="75px" width="100px"/>
+    <!--Navigation Bar (top right) Home Page -->
+    
+    <nav class="navbar">                                 
+        <ul style="float:right" class="nav navbar-nav" >
+          <li class="active"><a [routerLink]="'Home'">Home &nbsp;&nbsp;</a></li>     <!-- Links to all elements in navigation bar -->
+          <li class="active"><a [routerLink]="'About'">About Us&nbsp;&nbsp;</a></li>
+          <li class="active"><a [routerLink]="'Features'">Features &nbsp;&nbsp;</a></li>
+          <li class="active"><a [routerLink]="'Pricing'">Pricing &nbsp;&nbsp;</a></li>
+          <li class="active"><a [routerLink]="'Blog'">Blog &nbsp;&nbsp;</a></li>
+          <li class="active"><a [routerLink]="'Contact'">Contact &nbsp;&nbsp;</a></li>
+        </ul>
+    </nav>
+  
 
-  <!--Navigation Bar (top right) Home Page -->
-  <nav class="navbar navbar-inverse" >                                 
-      <ul style="float:right" class="nav navbar-nav" >
-        <li ><a [routerLink]="'Home'">Home</a></li>     <!-- Links to all elements in navigation bar -->
-        <li class="active"><a [routerLink]="'About'">About</a></li>
-        <li class="active"><a [routerLink]="'Features'">Features</a></li>
-        <li class="active"><a [routerLink]="'Pricing'">Pricing</a></li>
-        <li class="active"><a [routerLink]="'Blog'">Blog</a></li>
-        <li class="active"><a [routerLink]="'Contact'">Contact</a></li>
-      </ul>
-  </nav>
 
+    <!--Carousel begins-->
 
-<!--Carousel begins-->
-
- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <font size=7 color=white > <u>BEST EMAILING SOLUTION                  </u></font><br> 
-        <font size=3 color=white>FOR  SMALL  TO  LARGE  SCALE  ENTERPRISES.</font>
-       
-      </div>
-      <div class="item">
-       <font size=7 color=white> <u>GROW YOUR BUSINESS</u></font><br>
-       <font size=3 color=white> WITH  MAILGOB </font>
-      </div>
-      <div class="item">
-          <font size=7 color=white><u>EXCEPTIONAL EXPERIENCE</u></font><br>
-            <font size=3 color=white>WE  MAKE  IT  HAPPEN</font>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <font size=7 color=white > <u>BEST EMAILING SOLUTION                  </u></font><br> 
+            <font size=3 color=white>FOR  SMALL  TO  LARGE  SCALE  ENTERPRISES......</font>
+          </div>
+          <div class="item">
+          <font size=7 color=white> <u>GROW YOUR BUSINESS</u></font><br>
+          <font size=3 color=white> WITH  MAILGOB </font>
+          </div>
+          <div class="item">
+              <font size=7 color=white><u>EXCEPTIONAL EXPERIENCE</u></font><br>
+              <font size=3 color=white>WE  MAKE  IT  HAPPEN</font>
+          </div>
+        </div>
       </div>
     </div>
-   </div>
-  </div>
-
-        <h2>Why Choose Us</h2><br><br>
-<!-- 6 center Images on home page-->
+    <h2>Why Choose Us</h2>
+    <div class="underline">______ </div><br><br>
+    <!-- 6 center Images on home page-->
     <div>
       <ul>
         <li> 
@@ -77,76 +85,81 @@
         </li>
 
     
-      <p>&nbsp; Webinars Email-Marketing Solutions </p>
-    </ul>
+         <p>&nbsp; Webinars Email-Marketing Solutions </p>
+       </ul>
     </div>
 
     <!-- Try our free plan Sign-up-->
      <div class="plan">
       <ul>
-        
         <li class="active"><font size=5 color=white>Try our free plan</font> &nbsp; &nbsp;&nbsp; &nbsp; <a [routerLink]="'SignUp'"><font size=6> SignUp</font></a></li>  
-        
       </ul>
     </div> 
    
+    <!--Carousel begins-->
 
+    <!--  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="d-block img-fluid" [src]=business1 alt="First slide "height="500" width="800" >
+        </div>
+        <div class="item">
+          <img class="d-block img-fluid" [src]=business2 alt="Second slide "height="500" width="800">
+        </div>
+        <div class="item">
+          <img class="d-block img-fluid" [src]=business4 alt="Third slide "height="500" width="800">
+        </div>
+      </div>
 
-<!--Carousel begins-->
+        <!-- Carousel previous/next controls 
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!-- Carousel previous/next controls ends 
 
- <!--  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img class="d-block img-fluid" [src]=business1 alt="First slide "height="500" width="800" >
-    </div>
-    <div class="item">
-      <img class="d-block img-fluid" [src]=business2 alt="Second slide "height="500" width="800">
-    </div>
-    <div class="item">
-      <img class="d-block img-fluid" [src]=business4 alt="Third slide "height="500" width="800">
-    </div>
-  </div>
-
-    <!-- Carousel previous/next controls 
-     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-     <!-- Carousel previous/next controls ends 
-
-</div> -->
-  <!-- Carousel ends-->
+    </div> -->
+      <!-- Carousel ends-->
 
 
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
+      <ol class="carousel-indicators">
+            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+          <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+     </ol>
+    <div class="carousel-inner" role="listbox">
         <div class="item active">
-           
-           <img class="d-block img-fluid" [src]=business1 alt="First slide"> 
+           <img class="d-block img-fluid" [src]=business1 alt="First slide" height="820" width="100%" /> 
         </div>
         <div class="item">
-          <img class="d-block img-fluid" [src]=business2 alt="Second slide">
+          <img  class="d-block img-fluid" [src]=business2 alt="Second slide" height="820" width="100%"/>
         </div>
         <div class="item">
-          <img class="d-block img-fluid" [src]=business3 alt="Third slide">
+          <img  class="d-block img-fluid" [src]=business4 alt="Third slide" height="820" width="100%"/>
         </div>
-      </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <!--  <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+       <span class="glyphicon glyphicon-menu-left"></span>
         <span class="sr-only">Previous</span>
       </a>
       <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <!--  <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+       <span class="glyphicon glyphicon-menu-right"></span>
         <span class="sr-only">Next</span>
       </a>
+    
     </div>
+  </div>
 
     
-    <h2>Choose from wide range of templates</h2><br><br>
+    <h2>Choose from wide range of templates</h2>
+    <div class="underline">______ </div><br><br>
+
            
     <!-- 8 Images for templates -->
 
@@ -168,44 +181,11 @@
       </div>
     <!-- template code ends-->
 
-   <!--  <div class="carousel">
-        <ul class="slides">
-          <li>
-            <h2>Business1</h2>
-            <!-- <img [src]="business1" alt="Business1"/> 
-            <img [src]="business1" alt="Business1" height="300" width="430"/>
-          </li>
-      
-          <li>
-            <h2>Business2</h2>
-            <img [src]="business2" alt="Business2" height="300" width="430"/>
-          </li>
-      
-          <li>
-            <h2>Business3</h2>
-            <img [src]="business3" alt="Business3" height="300" width="430"/>
-          </li>
-      
-          <li>
-            <h2>Business4</h2>
-            <img [src]="business4" alt="Business4" height="300" width="430"/>
-          </li>
-      
-          <li>
-            <h2>Business5</h2>
-            <img [src]="business5" alt="Business5" height="300" width="430"/>
-          </li>
-      
-        </ul>
-      
-      </div>   
- -->
-
-
 
  <!--   Our Clients  -->
 
  <h2>Our Clients</h2>
+ <div class="underline">______ </div><br>
 
  <!-- Try our free plan Sign-up-->
  <div class="client">
@@ -224,29 +204,28 @@
     
   <ul>
     <li><u>Learn More</u><li><br>
-    <li>Features</li><br>
-    <li>Pricing Plans</li><br>
-    <li>Start Free</li><br>
-    <li>FAQ</li><br>
+    <li><a [routerLink]="'Footer'">Features</a></li><br>
+    <li><a [routerLink]="'Footer'">Pricing Plans</a></li><br>
+    <li><a [routerLink]="'Footer'">Start Free</a></li><br>
+    <li><a [routerLink]="'Footer'">FAQ</a></li><br>
   </ul>
-
+  </section>
       <!-- Column one end -->
-  </section>
-  <section>
-      <!-- Column two start -->
-         
-      <ul>
-      <li><u>About</u></li><br>
-      <li>Company</li><br>
-      <li>Marketing Blog</li><br>
-      <li>Press Release</li><br>
-      <li>Support</li><br>
-</ul>
+       <!-- Column two start -->
 
-      <!-- Column two end -->
-  </section>
   <section>
-      <!-- Column three start -->
+    <ul>
+      <li><u>About</u></li><br>
+      <li><a [routerLink]="'Footer'">Company</a></li><br>
+      <li><a [routerLink]="'Footer'">Marketing Blog</a></li><br>
+      <li><a [routerLink]="'Footer'">Press Release</a></li><br>
+      <li><a [routerLink]="'Footer'">Support</a></li><br>
+    </ul>
+
+  </section>
+       <!-- Column two end -->
+       <!-- Column three start -->
+  <section>
           
       <ul>
         <li><u>Need Help</u> </li><br>
@@ -258,18 +237,23 @@
         <li>{{sales}}</li>
      </ul>
 
-      <!-- Column three end -->
   </section>
+
+     <!-- Column three end -->
+
+     <!-- Column four start -->
   <section>
-      <!-- Column four start -->
-    
+        
     <ul>
       
-      <li><u>Connect</u></li> 
+      <li><u>Connect</u></li> <br>
       <li>
-      <img [src]="facebook_logo" alt="Facebook logo" height="30" width="30" />&nbsp;&nbsp;&nbsp;&nbsp;
-      <img [src]="twitter_logo" alt="Twitter logo" height="30" width="30"/>&nbsp;&nbsp;&nbsp;&nbsp;
-      <img [src]="instagram_logo" alt="Instagram logo" height="30" width="30"/>
+      <a href="www.facebook.com">
+        <img [src]="facebook_logo" alt="Facebook logo" height="30" width="30" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="www.twitter.com">
+        <img [src]="twitter_logo" alt="Twitter logo" height="30" width="30"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="www.instagram.com">
+        <img [src]="instagram_logo" alt="Instagram logo" height="30" width="30"/></a>
       </li> <br>
        <li> <u>Newsletter</u><br><br>
         <form>
@@ -278,41 +262,13 @@
       <button type="button" style=background-color:grey>SignUp</button>
     </form>
       </li>
-      
+    
      </ul>
 
       <!-- Column four end -->
   
   </section>
 </footer>
-
-<!-- <div class="footer">        
-  <div class="footer-left">
-    <a [routerLink]="'Footer'">Learn More</a> 
-    <a [routerLink]="'Footer'">Features</a> 
-    <a [routerLink]="'Footer'">Start Free</a> 
-    <a [routerLink]="'Footer'">Pricing plans</a>
-     <a [routerLink]="'Footer'">FAQ</a>
-  
-  </div>
-  <div class="footer-center2">
-    <h4><a [routerLink]="'Footer'">About</a> <br>         <a [routerLink]="'Footer'">Company </a><br>
-        <a [routerLink]="'Footer'">Marketing Blog </a><br> <a [routerLink]="'Footer'">Press Release</a><br>
-        <a [routerLink]="'Footer'">Support</a></h4>
-  </div>
-  <div class="footer-right">
-    <h4><a [routerLink]="'Footer'">Need Help</a><br> <a [routerLink]="'Footer'">Call us</a> <br>
-        <a [routerLink]="'Footer'">Enquiry </a> <br> <a [routerLink]="'Footer'">Press Release</a><br>
-        <a [routerLink]="'Footer'">Sales</a></h4>
-  </div>
-
-  <form>
-    Newsletter<br>
-    <input type="text" name="Newsletter"><br>
-  </form>
-  <button type="button">SignUp</button>
-
-</div>-->
 
 <!--Footer Bottom-->
 

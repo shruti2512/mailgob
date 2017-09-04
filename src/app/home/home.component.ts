@@ -12,16 +12,17 @@ export class HomeComponent {
     business0;business1;business2;business3;business4;business5;
     template1;template2;template3;template4;template5;template6;template7;template8;
 
-    facebook_logo;instagram_logo;twitter_logo; mailingwork_logo;
+    facebook_logo;instagram_logo;twitter_logo; mailingwork_logo;mailgob_logo;
 
     phone;enquiry;sales;
     constructor()
     {
         this.sitename="MailGob";                               /* MailGob logo on left-top*/
+        this.mailgob_logo='assets/images/mailgob_logo_transparent.png';
 
-        this.phone=">1234567890";
-        this.enquiry=">info@mailgob.com";
-        this.sales=">sales@mailgob.com";
+        this.phone="> 1234567890";
+        this.enquiry="> info@mailgob.com";
+        this.sales="> sales@mailgob.com";
 
         this.slider1='assets/images/slider1.png';               /* First slider images*/
         this.slider2='assets/images/slider2.png';
