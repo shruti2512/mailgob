@@ -12,13 +12,13 @@ export class HomeComponent {
     business0;business1;business2;business3;business4;business5;
     template1;template2;template3;template4;template5;template6;template7;template8;
 
-    facebook_logo;instagram_logo;twitter_logo; mailingwork_logo;mailgob_logo;
+    facebook_logo;instagram_logo;twitter_logo; mailingwork_logo;mailgob_logo;instas_logo;kingfisher_logo;
 
     phone;enquiry;sales;
     constructor()
     {
-        this.sitename="MailGob";                               /* MailGob logo on left-top*/
-        this.mailgob_logo='assets/images/mailgob_logo_transparent.png';
+        this.sitename="..";                               /* MailGob logo on left-top*/
+        this.mailgob_logo='assets/images/mailgob_logo.png';
 
         this.phone="> 1234567890";
         this.enquiry="> info@mailgob.com";
@@ -54,6 +54,9 @@ export class HomeComponent {
         this.twitter_logo='assets/images/twitter_logo.png';
         this.instagram_logo='assets/images/instagram_logo.png';
         this.mailingwork_logo='assets/images/mailingwork_logo.png';
+        this.instas_logo='assets/images/instas_logo.png';
+        this.kingfisher_logo='assets/images/kingfisher_logo.png';
+
 
     }
     

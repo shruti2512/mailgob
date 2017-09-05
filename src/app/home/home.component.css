@@ -5,6 +5,7 @@
 h2{                                                /* Design for " Why Choose Us" */
     text-align:center;
     color: black;    
+    
 }
 
 h4{                                                
@@ -14,47 +15,47 @@ h6{
     color:white;
     /* background-color: black; */
 } 
-p{
+/* p{
     word-spacing: 150px;
     font-size:220%;
-}
+} */
 
 .page{ 
+
     background-image:url("gob.png");              /* Specifies background image for the main page*/
     position: relative;
     min-height: 672px;
     min-width: 100%;
-    background-repeat:repeat;
-        
+    background-repeat:repeat;    
 } 
-.navbar-default{
+.navbar{
     background-color: none;
+    overflow:auto;
 }
-.navbar-inner {
-    background: none !important; 
-    text-decoration: none;
-    border-radius: 0;
-    border: 0 !important;
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-  }
-  
-  .navbar-inverse .nav .active > a {
-    background: 0 !important; 
-    border-radius: 0;
-    color: white !important;
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-  }
 
-  .navbar-inverse .nav > li > a {
-    color: blue !important;
-    text-shadow: none !important;
-  }
-  
-  .navbar-inverse .nav > li > a:hover {
-    color: blue !important;
-  }
+
+.image-center{
+    max-width:300px;
+    padding:30px 30px;
+}
+.center-row{
+    padding:45px 45px;
+    display:inline-block;
+    width:33%;
+    text-align: center;
+    font-weight:bold;
+   
+}
+
+.template-image{
+    padding:10px;
+    
+}
+.template-row{
+    padding:10px 25px;
+    display:inline-block;
+    width:24%;
+}
 
 .underline{
     text-align: center;
@@ -73,24 +74,28 @@ a{                                               /*color for elements in nav-bar
  
 ul {                                            /*Remove default bullets,margin and padding from the list items*/
     list-style-type: none;
+    margin:40px;                                /*Adds margin to navbar*/
 }  
  
-
+.item{
+    font-weight:bold;
+}
  #carouselExampleSlidesOnly{
     float: left;
-    margin: 180px 180px;
+    margin: 160px 150px;                        /*Adjusts the position of slides relative to the image*/
     width: 80%;
 }
 
 #carouselExampleControls img{
-    margin:10px 10px 10px 10px;
+   
     position: relative; 
-   /* top:50%;
-     display: inline-block; 
-    width: 100%;*/
-    height: 425px;
-    max-height: 625px;
-    /*overflow:hidden;*/
+    display: inline-block; 
+     width: 100%;
+    height: 525px;
+    max-height: 625px; 
+    padding: none;
+     overflow:hidden; 
+    
     }
     .glyphicon-menu-left {
         position: absolute;
@@ -116,15 +121,22 @@ ul {                                            /*Remove default bullets,margin 
         color:orangered;
     }
     
-.plan{
+.plan{                                  /*Design element for Signup*/
     background-color:black;
     text-align:center;
     line-height: 100px;
 }
-.client{
-    background-color:grey;
+.client{                                /*three logos of client before footer*/
+    background-color:#EFECEC;
+   /*  padding: 4em; */
+    padding:10px;    
 }
 
+.logo{                                  /*Spacing each logo within client*/
+    padding:25px 25px;
+    display:inline-block;
+    width:33%;
+}
 footer {                                        /*Design for all footer elements*/
     display: table;
     background-image:url("footer.jpg");
@@ -151,14 +163,17 @@ footer > section + section {
     color:white;
 } */
 
-.bottom {background-color:gray; line-height: 30px;
+#bottom {                               /*line below footer*/
+    background-color:black;
+    color:white;
+    line-height:30px;
+    padding:5px 80px 10px 100px;
+    overflow: auto;
+}
+#footer-bottom1{            /*Design for bottom-most elements in footer (Privay Policy)*/
+   float:left;
     
 }
-.footer-bottom1{            /*Design for bottom-most elements in footer (Privay Policy and Copyright)*/
-    float:left;
-    
-}
-.footer-bottom2{
-    float:right;
-    
-} 
+#footer-bottom2{            /*Design for bottom-most elements in footer (Copyright)*/
+   float:right;
+}  
